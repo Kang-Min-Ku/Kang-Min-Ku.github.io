@@ -18,9 +18,7 @@ Exec Local Server in Goorm IDE
 	
 -----------------------
 
-Reference
-
-:warning: References are usally written in Korean.
+Reference <:warning: References are usally written in Korean.>
 
 * Make Github Page 
 
