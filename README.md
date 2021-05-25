@@ -30,4 +30,10 @@ Reference <:warning: References are usally written in Korean.>
 
 * Disqus
 	* [How to Use Disqus](https://devinlife.com/howto%20github%20pages/blog-disqus/)
+	
+* Google Webmaster
+
+	* [Google Webmaster](https://gmlwjd9405.github.io/2017/10/20/include-blog-in-a-GoogleSearchEngine.html)
+	
+	* [Write sitemap.xml and robots.txt](https://www.ascentkorea.com/what-is-robots-txt-sitemap-xml/)
 

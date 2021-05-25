@@ -54,7 +54,7 @@ atom_feed: #좋은 기능 맞음. 언젠가 해보기
   hide                   : # true, false (default)
 search                   : true # true, false (default) #구글 서치엔진도 궁금하누 / 서치엔진은 만든 후에 한 번 더 보기
 search_full_content      : false # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search_provider          : "lunr" # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -63,7 +63,7 @@ algolia:
 google:	
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
-# SEO Related
+# SEO Related -> post 올린다음에 다시 해보기
 google_site_verification :
 bing_site_verification   :
 yandex_site_verification :
@@ -86,9 +86,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "G-P7FMV2SKDF"
     anonymize_ip         : # true, false (default)
 
 
