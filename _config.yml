@@ -88,7 +88,7 @@ social:
 analytics:
   provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : "G-P7FMV2SKDF"
+    tracking_id          : "UA-197855879-1" #Universal만 됨 현재 Analytics4는 안되는 듯
     anonymize_ip         : # true, false (default)
 
 
