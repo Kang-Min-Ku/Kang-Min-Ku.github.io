@@ -73,9 +73,9 @@ naver_site_verification  :
 twitter:
   username               :
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
+  username               : 
+  app_id                 : 
+  publisher              : 
 og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -92,32 +92,32 @@ analytics:
     anonymize_ip         : # true, false (default)
 
 
-# Site Author
+# Site Author -> 커스텀 가능
 author:
   name             : "Kang"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  avatar           : "assets/images/avatar_temp.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I will be dinosour"
+  location         : "Repulic of Korea"
+  email            : "netisen4@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "netisen4@gmail.com"
+      #url: "matilto:netisen4@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/Kang-Min-Ku"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/k_am9bgpa/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/profile.php?id=100005839175023"
 
 # Site Footer
 footer:
@@ -125,12 +125,9 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/Kang-Min-Ku"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -139,8 +136,10 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
-
+      url: "https://www.instagram.com/k_am9bgpa/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/profile.php?id=100005839175023"
 
 # Reading Files
 include:
@@ -266,6 +265,8 @@ compress_html:
   ignore:
     envs: development
 
+sidebar:
+  nav: "docs"
 
 # Defaults
 defaults:
@@ -275,8 +276,15 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      #author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+        nav: "docs"

@@ -36,4 +36,8 @@ Reference <:warning: References are usally written in Korean.>
 	* [Google Webmaster](https://gmlwjd9405.github.io/2017/10/20/include-blog-in-a-GoogleSearchEngine.html)
 	
 	* [Write sitemap.xml and robots.txt](https://www.ascentkorea.com/what-is-robots-txt-sitemap-xml/)
+	
+	* [Google Analytics 4](https://developers.google.com/analytics/devguides/collection/ga4)
+	
+	* [Google Analytics 4](https://dachata.com/google-marketing-platform/google-analytics-4/post/what-is-google-analytics-4/)
 
