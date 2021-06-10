@@ -28,9 +28,22 @@ masthead_title           : "무야~호!" # overrides the website title displayed
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : "kam9" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : "github-light" # "github-light" (default), "github-dark"
+    issue_term           : "Kang-Min-Ku/github-page-comment" # "pathname" (default)
+  staticman:
+    branch               : # "master"
+    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 reCaptcha:
   siteKey                : "6LdzlOoaAAAAAKGvYIE8AxgRemPawioXdrR9-rc_"
   secret                 : "6LdzlOoaAAAAANu-2NstMWIO2BJyKqRLsHO10Wst"
@@ -265,4 +278,5 @@ defaults:
       comments: true
       share: true
       related: true
+
 #https://github.com/jungbin-kim/jungbin-kim.github.com/tree/version/2.0/_posts
