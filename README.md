@@ -28,8 +28,9 @@ Reference <:warning: References are usally written in Korean.>
 	
 	* [Basic](https://velog.io/@zawook/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-2)
 
-* Disqus
-	* [How to Use Disqus](https://devinlife.com/howto%20github%20pages/blog-disqus/)
+* Comment
+	* [Disus](https://devinlife.com/howto%20github%20pages/blog-disqus/)
+	* [Utterence](https://baek.dev/post/4/)
 	
 * Google Webmaster
 
