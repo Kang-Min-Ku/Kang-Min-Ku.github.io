@@ -265,9 +265,6 @@ compress_html:
   ignore:
     envs: development
 
-sidebar:
-  nav: "docs"
-
 # Defaults
 defaults:
   # _posts
@@ -275,16 +272,12 @@ defaults:
       path: ""
       type: posts
     values:
+      sidebar:
+        nav: "docs"	
       layout: single
       #author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
-  # _docs
-  - scope:
-      path: ""
-      type: docs
-    values:
-      sidebar:
-        nav: "docs"
+
