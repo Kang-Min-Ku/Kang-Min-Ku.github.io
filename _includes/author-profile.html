@@ -26,6 +26,11 @@
         {{ author.bio | markdownify }}
       </div>
     {% endif %}
+    {% if author.shortIntro %}
+      <div class="author__bio" itemprop="description">
+        {{ author.shortIntro | markdownify }}
+      </div>
+    {% endif %}
   </div>
 
   <div class="author__urls-wrapper">
