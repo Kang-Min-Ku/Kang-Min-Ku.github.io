@@ -14,17 +14,17 @@ minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US" #이거 Kr로 해도 되나
-title                    : "아니 이개 외 죽어?"
+title                    : "Studio K"
 title_separator          : "-"
-subtitle                 : "랄라룰라" # site tagline that appears below site title in masthead
-name                     : "Kam9"
+subtitle                 : "내 공간을 가지는 건 정말 멋진 일이야" # site tagline that appears below site title in masthead
+name                     : "K"
 description              : "An amazing website."
 url                      : "https://kang-min-ku.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Kang-Min-Ku/Kang-Min-Ku.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png" #이미지 찾아넣기
-logo                     : "/assets/images/logo_temp.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "무야~호!" # overrides the website title displayed in the masthead, use " " for no title
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : "Studio K" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -82,9 +82,10 @@ analytics:
 
 # Site Author -> 커스텀 가능
 author:
-  name             : "Kang"
-  avatar           : "assets/images/avatar_temp.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I will be dinosour"
+  name             : "K MinKu"
+  avatar           : "assets/images/avatar_temp2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "G I B P A C"
+  shortIntro       : "AI Simulation Network"
   location         : "Repulic of Korea"
   email            : "netisen4@gmail.com"
   links:
@@ -272,3 +273,6 @@ defaults:
       toc_label: "Contents Table"
 
 #https://github.com/jungbin-kim/jungbin-kim.github.com/tree/version/2.0/_posts
+#https://blog.jungbin.kim/
+#https://ansohxxn.github.io/blog/jekyll-directory-structure/
+#recent portfolio categories tags
