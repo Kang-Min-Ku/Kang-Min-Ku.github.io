@@ -1,19 +1,9 @@
 # main links
 main:
-  - title: "Wild Lift"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
-    url: https://google.com
-  - title: "Sample Posts"
-    url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
+  - title: "Home"
+    url: /
+  - title: "Category"
+    url: /categories/
+  - title: "Profile"
+    url: /profile/
 docs:
-  - title: "Title"
-    image: http://placehold.it/350x250
-    image_alt: "image"
-    text: "Some text here."
-  - title: "Another Title"
-    text: "More text here."

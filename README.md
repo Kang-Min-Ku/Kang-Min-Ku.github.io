@@ -18,15 +18,16 @@ Exec Local Server in Goorm IDE
 	
 -----------------------
 
-Reference <:warning: References are usally written in Korean.>
+Reference
 
 * Make Github Page 
 
 	* [Github Pages Documentation](https://docs.github.com/en/pages)
-
 	* [About Build Failed](https://velog.io/@shg4821/%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-1.5)
+	* [Blog Example](https://ansohxxn.github.io/blog/category/)
 	
-	* [Basic](https://velog.io/@zawook/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-2)
+* Minimal Mistake
+	* [Dir Structure](https://ansohxxn.github.io/blog/jekyll-directory-structure/)
 
 * Comment
 	* [Disus](https://devinlife.com/howto%20github%20pages/blog-disqus/)
@@ -35,10 +36,7 @@ Reference <:warning: References are usally written in Korean.>
 * Google Webmaster
 
 	* [Google Webmaster](https://gmlwjd9405.github.io/2017/10/20/include-blog-in-a-GoogleSearchEngine.html)
-	
 	* [Write sitemap.xml and robots.txt](https://www.ascentkorea.com/what-is-robots-txt-sitemap-xml/)
-	
 	* [Google Analytics 4](https://developers.google.com/analytics/devguides/collection/ga4)
-	
 	* [Google Analytics 4](https://dachata.com/google-marketing-platform/google-analytics-4/post/what-is-google-analytics-4/)
 

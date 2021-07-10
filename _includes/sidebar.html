@@ -1,6 +1,6 @@
-{% if page.author_profile or layout.author_profile or page.sidebar %}
+{% if page.author_profile or layout.author_profile or page.sidebar or page.sidebar_categories or page.slide %}
   <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+  {% if page.url!="/" and page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
   {% if page.sidebar %}
     {% for s in page.sidebar %}
       {% if s.image %}
@@ -14,6 +14,12 @@
     {% if page.sidebar.nav %}
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
+  {% endif %}
+		  
+  {% if page.slide %}
+	  {% include nav_list_categories_slide %}
+  {% elsif page.sidebar_categories or page.url=="/" %}
+	  {% include nav_list_categories %}
   {% endif %}
   </div>
 {% endif %}

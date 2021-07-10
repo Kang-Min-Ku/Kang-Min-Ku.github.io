@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "en-US" #이거 Kr로 해도 되나
 title                    : "Studio K"
 title_separator          : "-"
-subtitle                 : "내 공간을 가지는 건 정말 멋진 일이야" # site tagline that appears below site title in masthead
+subtitle                 : "" # site tagline that appears below site title in masthead
 name                     : "K"
 description              : "An amazing website."
 url                      : "https://kang-min-ku.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -271,8 +271,4 @@ defaults:
       related: true
       toc : true
       toc_label: "Contents Table"
-
-#https://github.com/jungbin-kim/jungbin-kim.github.com/tree/version/2.0/_posts
-#https://blog.jungbin.kim/
-#https://ansohxxn.github.io/blog/jekyll-directory-structure/
-#recent portfolio categories tags
+      sidebar_categories: true
