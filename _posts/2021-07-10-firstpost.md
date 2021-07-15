@@ -35,4 +35,4 @@ tags:
 시작하기 전에는 몰랐는데 생각보다 만들어야 할 것들이 많다. 그래도 시작이 반이니 이제 50.00001% 정도는 한 거 아닌가. 1년 2년 계속 열심히 하다보면 생각보다 봐 줄만한 블로그가 나오겠죠..?
 
 ## Reference
-* https://www.ronenbekerman.com/making-of-arts-crafts/#read-more-content
+* <https://www.ronenbekerman.com/making-of-arts-crafts/#read-more-content>
