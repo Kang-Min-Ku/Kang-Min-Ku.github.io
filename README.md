@@ -43,4 +43,8 @@ Reference
 * Post
 	* [Markdown](https://gist.github.com/ihoneymon/652be052a0727ad59601)
 	
+요양병원 & 재가요양
+
+의사 처방 없이는 방문 간호사도 진통제를 못 놔줌->
+세브란스 -> 가정간호
 
