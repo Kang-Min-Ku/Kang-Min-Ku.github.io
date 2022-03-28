@@ -14,3 +14,24 @@
 ./assets/js/_main.js:      if ($(".initial-content").hasClass("is--hidden")) {
 ./assets/js/_main.js:        $(".initial-content").toggleClass("is--hidden");
 ./assets/js/_main.js:    $(".initial-content").toggleClass("is--hidden");
+
+1. 요양병원 & 재가요양
+*의사 처방 없이는 방문 간호사도 진통제를 못 놔줌 -> 사실상 대형병원 가정방문 시스템 이용해야 함
+
+(1) 세브란스 병원 
+https://sev.severance.healthcare/sev/expert/support/homenursing.do#tab-content2
+의사 처방하에 약물투여 및 주사, 간호 등이 가능. 성모병원이랑 유사
+
+(2) 서울아산병원
+https://www.amc.seoul.kr/asan/homecareguide/howapply/howApply.do
+제공하는 서비스는 세브란스와 동일. 타 기관 소견서를 가지고 와서 외래진료를 받은 후 신청하면 가능. 하지만 아산병원 혈액종양내과는 대리진료가 안돼서 아빠가 가야함. 만약에 소화기내과 통해서 외래 받은 후 신청할 수 있다면 좋은 선택지 중 하나일 듯
+
+(3) 삼성병원
+http://www.samsunghospital.com/dept/main/index.do?DP_CODE=HHC&MENU_ID=003020
+02-3410-2938, 2996
+아산병원과 비슷함
+
+Summary: 성모병원 외에도 추가적인 방문간호 서비스가 필요하면 대진이 가능한 대형병원 찾아가는게 제일 좋아 보임
+
+2. 호스피스 병동 - 서울 내 호스피스 병동 리스트
+https://hospice.go.kr/organ/organMap.do?menu_no=&organ_no=&organ_type=1%7C2&service_type=&page_now=1&page_row=10&region_cd=1&sigungu_cd=&organ1_1=1&organ1_2=2&keyword=
