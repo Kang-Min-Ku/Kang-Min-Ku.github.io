@@ -1,6 +1,7 @@
-title:              Hello, I'm MK
+title:              Test
 email:              netisen4@gmail.com
-description:        
+page_description:        kkk
+page_greeting:      Hello, I'm MK
 author:             Kang Minku
 baseurl:            ""
 url:                "https://Kang-Min-Ku.github.io"
