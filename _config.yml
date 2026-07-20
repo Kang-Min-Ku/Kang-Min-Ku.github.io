@@ -1,6 +1,6 @@
-title:              Clean Blog
+title:              Hello, I'm MK
 email:              netisen4@gmail.com
-description:        A Blog Theme by Start Bootstrap
+description:        Hello, I'm MK
 author:             Kang Minku
 baseurl:            ""
 url:                "https://Kang-Min-Ku.github.io"
@@ -13,7 +13,7 @@ instagram_username:
 linkedin_username:
 
 # Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+google_analytics:   
 
 # Build settings
 markdown:           kramdown
