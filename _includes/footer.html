@@ -6,6 +6,9 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
+        
+        <!-- 홈 화면(layout: home)이 아닐 때만 아래 ul 태그(연락처 목록)를 보여줍니다 -->
+        {% if page.layout != 'home' %}
         <ul class="list-inline text-center">
           {% if site.email %}
           <li class="list-inline-item">
@@ -68,6 +71,9 @@
           </li>
           {% endif %}
         </ul>
+        <!-- 조건문 닫기 -->
+        {% endif %}
+
         <p class="copyright text-muted">Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }}</p>
       </div>
     </div>
