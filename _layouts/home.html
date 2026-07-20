@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<!-- Page Header -->
+<!-- <!-- Page Header -->
 {% if page.background %}
 <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
   {% else %}
@@ -21,4 +21,113 @@ layout: default
         </div>
       </div>
     </div>
-  </header>
+  </header> -->
+
+<div class="container">
+  <div class="row">
+    
+    <!-- ============================================== -->
+    <!-- [좌측 영역] 프로필, 연락처, 점프 링크 (4칸 차지)  -->
+    <!-- ============================================== -->
+    <div class="col-md-4 mb-5">
+      
+      <!-- sticky-top 클래스로 스크롤을 내려도 화면에 고정시킵니다 -->
+      <div class="sticky-top" style="top: 80px;"> 
+        
+        <!-- 사진과 이름 -->
+        <div class="text-center mb-3">
+          <!-- 사진이 안 뜬다면 /img/profile.jpg 위치에 사진을 올려주세요 -->
+          <img src="{{ '/img/profile.jpg' | relative_url }}" alt="Profile Picture" class="img-fluid rounded-circle" style="max-width: 150px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <h3 class="mt-3">{{ site.author }}</h3>
+        </div>
+
+        <!-- 연락처 아이콘 -->
+        <div class="text-center mb-4">
+          <ul class="list-inline">
+            {% if site.email %}
+            <li class="list-inline-item">
+              <a href="mailto:{{ site.email | encode_email }}">
+                <span class="fa-stack fa-sm"><i class="fas fa-circle fa-stack-2x"></i><i class="far fa-envelope fa-stack-1x fa-inverse"></i></span>
+              </a>
+            </li>
+            {% endif %}
+            {% if site.linkedin_username %}
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+                <span class="fa-stack fa-sm"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-linkedin fa-stack-1x fa-inverse"></i></span>
+              </a>
+            </li>
+            {% endif %}
+            {% if site.github_username %}
+            <li class="list-inline-item">
+              <a href="https://github.com/{{ site.github_username }}">
+                <span class="fa-stack fa-sm"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-github fa-stack-1x fa-inverse"></i></span>
+              </a>
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+
+        <!-- 점프 링크 -->
+        <div class="list-group list-group-flush text-center" style="border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+          <a href="#about" class="list-group-item list-group-item-action border-0">About Me</a>
+          <a href="#experience" class="list-group-item list-group-item-action border-0">Experience</a>
+          <a href="#projects" class="list-group-item list-group-item-action border-0">Projects</a>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- [우측 영역] 자유로운 자기소개 본문 (8칸 차지)      -->
+    <!-- ============================================== -->
+    <div class="col-md-8">
+      
+      <!-- 섹션 1: About Me -->
+      <!-- style에 padding-top과 margin-top을 넣어야 상단 메뉴바에 제목이 가려지지 않습니다. -->
+      <h2 id="about" style="padding-top: 70px; margin-top: -70px; font-weight: 800; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; margin-bottom: 20px;">About Me</h2>
+      <p style="font-size: 1.1rem; line-height: 1.8;">
+        안녕하세요! 저는 데이터를 다루는 것을 좋아하고, 
+        사용자에게 가치 있는 경험을 제공하는 프로덕트를 고민하는 개발자 강민구입니다. 
+        항상 새로운 기술을 배우는 것을 즐깁니다.
+      </p>
+      <p style="font-size: 1.1rem; line-height: 1.8;">
+        저의 주요 관심사는 <strong>웹 프론트엔드 개발</strong>과 <strong>데이터 시각화</strong>입니다.
+      </p>
+
+      <br><br>
+
+      <!-- 섹션 2: Experience -->
+      <h2 id="experience" style="padding-top: 70px; margin-top: -70px; font-weight: 800; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; margin-bottom: 20px;">Experience</h2>
+      <ul style="font-size: 1.1rem; line-height: 2;">
+        <li><strong>OO 대학교 컴퓨터공학과</strong> (2020 - 현재)</li>
+        <li><strong>멋쟁이사자처럼 웹 프로그래밍 동아리</strong> 11기 수료</li>
+        <li><strong>A 학회 알고리즘 스터디</strong> 리드</li>
+      </ul>
+
+      <br><br>
+
+      <!-- 섹션 3: Projects -->
+      <h2 id="projects" style="padding-top: 70px; margin-top: -70px; font-weight: 800; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; margin-bottom: 20px;">Projects</h2>
+      
+      <div class="card mb-4" style="border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
+        <h4 style="margin-top: 0;">1. 나의 첫 포트폴리오 웹사이트</h4>
+        <p style="margin-bottom: 10px;">Jekyll과 GitHub Pages를 활용하여 구성한 개인 기술 블로그 및 포트폴리오입니다.</p>
+        <ul style="margin-bottom: 0;">
+          <li><strong>기간:</strong> 2026.07</li>
+          <li><strong>사용 기술:</strong> HTML, CSS, Jekyll, Bootstrap</li>
+        </ul>
+      </div>
+
+      <div class="card mb-4" style="border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
+        <h4 style="margin-top: 0;">2. 000 서비스 클론 코딩</h4>
+        <p style="margin-bottom: 10px;">React를 활용한 프론트엔드 역량 강화 프로젝트입니다.</p>
+        <ul style="margin-bottom: 0;">
+          <li><strong>기간:</strong> 2025.10 - 2025.12</li>
+          <li><strong>사용 기술:</strong> React, Node.js</li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
