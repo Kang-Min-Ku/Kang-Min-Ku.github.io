@@ -20,3 +20,38 @@
 	padding-top: 0;
 	margin-top: 0;
 }
+
+#mainNav {
+	background-color: #2d2d2d;
+
+	.navbar-brand,
+	.navbar-toggler {
+		color: #ffffff !important;
+	}
+
+	.nav-link {
+		color: #ffffff !important;
+
+		&:focus,
+		&:hover {
+			color: #b3b3b3 !important;
+		}
+	}
+
+	@media only screen and (min-width: 992px) {
+		&.is-fixed {
+			background-color: #2d2d2d;
+			border-bottom: 1px solid #1a1a1a;
+
+			.navbar-brand,
+			.nav-link {
+				color: #ffffff !important;
+
+				&:focus,
+				&:hover {
+					color: #b3b3b3 !important;
+				}
+			}
+		}
+	}
+}
