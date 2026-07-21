@@ -20,7 +20,7 @@ layout: default
         <!-- 사진과 이름 -->
         <div class="text-center mb-3">
           <!-- 사진이 안 뜬다면 /img/profile.jpg 위치에 사진을 올려주세요 -->
-          <img src="{{ '/img/profile.jpeg' | relative_url }}" alt="Profile Picture" class="img-fluid rounded-circle" style="max-width: 150px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <img src="{{ '/img/profile.jpeg' | relative_url }}" alt="Profile Picture" class="img-fluid home-avatar">
           <h3 class="mt-3">{{ site.author }}</h3>
         </div>
 
@@ -52,10 +52,10 @@ layout: default
         </div>
 
         <!-- 점프 링크 -->
-        <div class="list-group list-group-flush text-center" style="border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-          <a href="#about" class="list-group-item list-group-item-action border-0">About Me</a>
-          <a href="#experience" class="list-group-item list-group-item-action border-0">Experience</a>
-          <a href="#projects" class="list-group-item list-group-item-action border-0">Projects</a>
+        <div class="list-group list-group-flush text-center home-jump-links">
+          <a href="#about" class="list-group-item list-group-item-action border-0 home-jump-link">About Me</a>
+          <a href="#experience" class="list-group-item list-group-item-action border-0 home-jump-link">Experience</a>
+          <a href="#projects" class="list-group-item list-group-item-action border-0 home-jump-link">Projects</a>
         </div>
         
       </div>
@@ -68,7 +68,7 @@ layout: default
       
       <!-- 섹션 1: About Me -->
       <!-- style에 padding-top과 margin-top을 넣어야 상단 메뉴바에 제목이 가려지지 않습니다. -->
-      <h2 id="about" style="padding-top: 70px; margin-top: -70px; font-weight: 800; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; margin-bottom: 20px;">About Me</h2>
+      <h2 id="about" class="home-section-heading" style="font-weight: 800; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; margin-bottom: 20px;">About Me</h2>
       <p style="font-size: 1.1rem; line-height: 1.8;">
         안녕하세요! 저는 데이터를 다루는 것을 좋아하고, 
         사용자에게 가치 있는 경험을 제공하는 프로덕트를 고민하는 개발자 강민구입니다. 
@@ -81,7 +81,7 @@ layout: default
       <br><br>
 
       <!-- 섹션 2: Experience -->
-      <h2 id="experience" style="padding-top: 70px; margin-top: -70px; font-weight: 800; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; margin-bottom: 20px;">Experience</h2>
+      <h2 id="experience" class="home-section-heading" style="font-weight: 800; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; margin-bottom: 20px;">Experience</h2>
       <ul style="font-size: 1.1rem; line-height: 2;">
         <li><strong>OO 대학교 컴퓨터공학과</strong> (2020 - 현재)</li>
         <li><strong>멋쟁이사자처럼 웹 프로그래밍 동아리</strong> 11기 수료</li>
@@ -91,7 +91,7 @@ layout: default
       <br><br>
 
       <!-- 섹션 3: Projects -->
-      <h2 id="projects" style="padding-top: 70px; margin-top: -70px; font-weight: 800; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; margin-bottom: 20px;">Projects</h2>
+      <h2 id="projects" class="home-section-heading" style="font-weight: 800; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; margin-bottom: 20px;">Projects</h2>
       
       <div class="card mb-4" style="border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
         <h4 style="margin-top: 0;">1. 나의 첫 포트폴리오 웹사이트</h4>
