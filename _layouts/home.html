@@ -8,7 +8,7 @@ layout: default
   
   .cv-container {
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-    /* 4. 메인 영역을 넓게 쓰기 위해 전체 컨테이너의 최대 너비를 키웠습니다 */
+    /* 메인 영역을 넓게 쓰기 위해 전체 컨테이너의 최대 너비를 키웠습니다 */
     max-width: 1250px !important; 
   }
   .cv-section-title {
@@ -62,7 +62,7 @@ layout: default
           <img src="{{ '/img/profile.jpeg' | relative_url }}" alt="Profile Picture" class="img-fluid home-avatar" style="width: 220px; height: 220px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
           
           <h3 class="mt-4 mb-0" style="font-weight: 700; color: #212529; font-size: 1.8rem; letter-spacing: -0.5px;">Minku Kang</h3>
-          <!-- 1. 간격을 3px 정도 미세하게 더 벌렸습니다 (margin-top: 5px) -->
+          <!-- 간격을 3px 정도 미세하게 더 벌렸습니다 (margin-top: 5px) -->
           <p style="font-size: 1.15rem; font-weight: 500; color: #555; margin-top: 5px;">Ph.D. Student in AI</p>
         </div>
 
@@ -118,18 +118,29 @@ layout: default
 
         <div class="mt-4">
           <h5 style="font-weight: 700; color: #333; margin-bottom: 15px; font-size: 1.15rem;">Research Interests</h5>
-          <!-- Research Interests 계층화 (리스트 구조 적용) -->
-          <ul style="font-size: 1.05rem; line-height: 1.8; color: #444; padding-left: 22px;">
-            <li style="margin-bottom: 8px;">
-              <strong style="color: #212529;">Recommender Systems</strong>
-              <ul style="padding-left: 25px; margin-top: 4px; color: #555; list-style-type: circle;">
-                <li>LLM-based recommendation</li>
-              </ul>
-            </li>
-            <li>
-              <strong style="color: #212529;">Graph Neural Networks</strong>
-            </li>
-          </ul>
+          
+          <!-- 웹사이트스러운 카드 & 태그 디자인으로 변경 -->
+          <div class="d-flex flex-column">
+            <!-- 관심 분야 1 -->
+            <div style="background-color: #f8f9fa; border-left: 4px solid #0056b3; border-radius: 6px; padding: 14px 20px; margin-bottom: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+              <div style="font-weight: 700; color: #212529; font-size: 1.1rem; margin-bottom: 8px;">
+                <i class="fas fa-star" style="color: #0056b3; margin-right: 8px;"></i>Recommender Systems
+              </div>
+              <div style="padding-left: 28px;">
+                <span style="display: inline-block; background-color: #e2e6ea; color: #383d41; padding: 5px 12px; border-radius: 20px; font-size: 0.95rem; font-weight: 500;">
+                  LLM-based recommendation
+                </span>
+              </div>
+            </div>
+
+            <!-- 관심 분야 2 -->
+            <div style="background-color: #f8f9fa; border-left: 4px solid #0056b3; border-radius: 6px; padding: 14px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+              <div style="font-weight: 700; color: #212529; font-size: 1.1rem;">
+                <i class="fas fa-project-diagram" style="color: #0056b3; margin-right: 8px;"></i>Graph Neural Networks
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
 
@@ -205,13 +216,13 @@ layout: default
       <div class="cv-section-wrapper">
         <h2 id="publications" class="cv-section-title">Publications</h2>
         
-        <!-- 2. 연도별 그룹핑 추가 -->
+        <!-- 연도별 그룹핑 -->
         <h3 style="font-size: 1.4rem; font-weight: 700; color: #333; margin-bottom: 15px; padding-bottom: 5px; border-bottom: 1px solid #eaeaea;">2025</h3>
 
         <!-- 논문 1 [C1] -->
-        <!-- 3. 좌측 파란색 선 복구 (border-left, padding-left) -->
+        <!-- 좌측 파란색 선 복구 (border-left, padding-left) -->
         <div class="d-flex mb-4" style="border-left: 3px solid #0056b3; padding-left: 15px;">
-          <!-- 2. [C1], [J1] 태그 영역 -->
+          <!-- [C1], [J1] 태그 영역 -->
           <div style="min-width: 50px; font-weight: 700; color: #0056b3; font-size: 1.15rem; margin-top: 1px;">[C1]</div>
           <div>
             <div style="font-size: 1.15rem; font-weight: 600; color: #212529; line-height: 1.4; margin-bottom: 4px;">
@@ -237,7 +248,8 @@ layout: default
               Park, J., <strong>Kang, M. <sup>+</sup></strong>, Sim, W., Lee, S. <sup>+</sup>, Park, H.
             </div>
             <div style="font-size: 1.05rem; color: #666;">
-              <em>ESWA</em> | <a href="https://arxiv.org/pdf/2509.11196" target="_blank" style="color: #0056b3; text-decoration: none; font-weight: 500;">[Link]</a>
+              <!-- 닫히지 않은 em 태그 수정 완료 -->
+              <em>ESWA</em> 2025 | <a href="https://arxiv.org/pdf/2509.11196" target="_blank" style="color: #0056b3; text-decoration: none; font-weight: 500;">[Link]</a>
             </div>
           </div>
         </div>
@@ -253,7 +265,8 @@ layout: default
               Kwak, J.-K., Kim, J., Dutta, R., Kim, M., <strong>Kang, M.</strong>, Wee, A., Yu, Y., Shin, J., Park, H., Kim, D., Kim, S.
             </div>
             <div style="font-size: 1.05rem; color: #666;">
-              <em>Small</em> | <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/smll.202506026" target="_blank" style="color: #0056b3; text-decoration: none; font-weight: 500;">[Link]</a>
+              <!-- 닫히지 않은 em 태그 수정 완료 -->
+              <em>Small</em> 2025 | <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/smll.202506026" target="_blank" style="color: #0056b3; text-decoration: none; font-weight: 500;">[Link]</a>
             </div>
           </div>
         </div>
