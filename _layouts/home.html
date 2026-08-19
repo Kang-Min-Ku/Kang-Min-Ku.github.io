@@ -58,15 +58,23 @@ layout: default
     border-bottom: none !important; /* 마지막 항목 가로선 제거 */
   }
 
-  /* CV 다운로드 버튼 호버(Hover) 효과 */
-  .cv-download-btn {
-    transition: all 0.2s ease-in-out;
+  /* 사이드바 CV 다운로드 버튼 호버(Hover) 효과 */
+  .cv-sidebar-btn {
+    transition: all 0.3s ease-in-out;
     display: inline-block;
     text-decoration: none !important;
+    border: 2px solid #0056b3;
+    color: #0056b3;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 8px 24px;
+    font-weight: 600;
+    font-size: 1.05rem;
   }
-  .cv-download-btn:hover {
-    background-color: #e9ecef !important;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.08) !important;
+  .cv-sidebar-btn:hover {
+    background-color: #0056b3 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 10px rgba(0, 86, 179, 0.2) !important;
     transform: translateY(-2px);
   }
 </style>
@@ -78,7 +86,7 @@ layout: default
   <div class="row">
     
     <!-- ============================================== -->
-    <!-- [좌측 영역] 프로필, 연락처, 점프 링크 -->
+    <!-- [좌측 영역] 프로필, 연락처, CV버튼, 점프 링크 -->
     <!-- ============================================== -->
     <div class="col-lg-3 col-md-4 mb-5">
       <div class="sticky-top" style="top: 80px;"> 
@@ -92,8 +100,8 @@ layout: default
         </div>
 
         <!-- 연락처 아이콘 -->
-        <div class="text-center mb-4">
-          <ul class="list-inline">
+        <div class="text-center mb-3">
+          <ul class="list-inline mb-0">
             <li class="list-inline-item">
               <a href="mailto:netisen4@gmail.com">
                 <span class="fa-stack fa-sm"><i class="fas fa-circle fa-stack-2x" style="color: #495057;"></i><i class="far fa-envelope fa-stack-1x fa-inverse"></i></span>
@@ -114,6 +122,13 @@ layout: default
             </li>
             {% endif %}
           </ul>
+        </div>
+        
+        <!-- 사이드바 CV 다운로드 버튼 배치 -->
+        <div class="text-center mb-4 pb-2">
+          <a href="https://drive.google.com/file/d/1TNbSeH_Ejc-2ArXALWCWRWHosHxRs9Jb/view?usp=sharing" target="_blank" class="cv-sidebar-btn">
+            <i class="fas fa-file-pdf" style="margin-right: 6px;"></i> Full CV
+          </a>
         </div>
 
         <!-- 점프 링크 -->
@@ -139,17 +154,6 @@ layout: default
         <p style="font-size: 1.15rem; line-height: 1.8; color: #444;">
           I am a Ph.D. student at KAIST AI advised by Prof. Kijung Shin.
         </p>
-
-        <!-- CV 링크 버튼 영역 (Research Interests와 유사한 디자인) -->
-        <div class="mt-4 mb-4">
-          <a href="https://drive.google.com/file/d/1TNbSeH_Ejc-2ArXALWCWRWHosHxRs9Jb/view?usp=sharing" target="_blank" class="cv-download-btn" style="background-color: #f8f9fa; border-left: 4px solid #0056b3; border-radius: 6px; padding: 12px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.03); color: #212529;">
-            <div style="font-weight: 700; font-size: 1.1rem; display: flex; align-items: center;">
-              <i class="fas fa-file-alt" style="color: #0056b3; margin-right: 10px; font-size: 1.2rem;"></i>
-              Curriculum Vitae (CV) 
-              <i class="fas fa-external-link-alt" style="margin-left: 8px; font-size: 0.9rem; color: #6c757d;"></i>
-            </div>
-          </a>
-        </div>
 
         <div class="mt-4">
           <h5 style="font-weight: 700; color: #333; margin-bottom: 15px; font-size: 1.15rem;">Research Interests</h5>
