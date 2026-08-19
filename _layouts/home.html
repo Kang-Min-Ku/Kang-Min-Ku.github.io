@@ -8,7 +8,6 @@ layout: default
   
   .cv-container {
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-    /* 메인 영역을 넓게 쓰기 위해 전체 컨테이너의 최대 너비를 키웠습니다 */
     max-width: 1250px !important; 
   }
   .cv-section-title {
@@ -19,24 +18,20 @@ layout: default
     padding-bottom: 8px;
     margin-bottom: 20px;
     color: #212529;
-    /* 폰트 크기 확대 */
     font-size: 1.8rem; 
   }
   .cv-item-org {
-    /* 폰트 크기 확대 */
     font-size: 1.25rem;
     font-weight: 700;
     color: #212529;
   }
   .cv-item-title {
-    /* 폰트 크기 확대 */
     font-size: 1.15rem;
     font-weight: 500;
     color: #0056b3;
     margin-bottom: 4px;
   }
   .cv-item-date {
-    /* 폰트 크기 확대 */
     font-size: 1.05rem;
     color: #6c757d;
   }
@@ -52,7 +47,7 @@ layout: default
   <div class="row">
     
     <!-- ============================================== -->
-    <!-- [좌측 영역] 좌측 비율을 4에서 3(col-lg-3)으로 줄여 우측을 넓힘 -->
+    <!-- [좌측 영역] 프로필, 연락처, 점프 링크 -->
     <!-- ============================================== -->
     <div class="col-lg-3 col-md-4 mb-5">
       <div class="sticky-top" style="top: 80px;"> 
@@ -62,7 +57,6 @@ layout: default
           <img src="{{ '/img/profile.jpeg' | relative_url }}" alt="Profile Picture" class="img-fluid home-avatar" style="width: 220px; height: 220px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
           
           <h3 class="mt-4 mb-0" style="font-weight: 700; color: #212529; font-size: 1.8rem; letter-spacing: -0.5px;">Minku Kang</h3>
-          <!-- 간격을 3px 정도 미세하게 더 벌렸습니다 (margin-top: 5px) -->
           <p style="font-size: 1.15rem; font-weight: 500; color: #555; margin-top: 5px;">Ph.D. Student in AI</p>
         </div>
 
@@ -104,14 +98,13 @@ layout: default
     </div>
 
     <!-- ============================================== -->
-    <!-- [우측 영역] 우측 비율을 8에서 9(col-lg-9)로 늘려 가로 크기 확장 -->
+    <!-- [우측 영역] 이력서 본문 -->
     <!-- ============================================== -->
     <div class="col-lg-9 col-md-8 pl-lg-5 pl-md-4">
       
       <!-- 섹션 1: About Me -->
       <div class="cv-section-wrapper">
         <h2 id="about" class="cv-section-title">About Me</h2>
-        <!-- 영어 자기소개 적용 -->
         <p style="font-size: 1.15rem; line-height: 1.8; color: #444;">
           I am a Ph.D. student at KAIST AI advised by Prof. Kijung Shin.
         </p>
@@ -119,9 +112,7 @@ layout: default
         <div class="mt-4">
           <h5 style="font-weight: 700; color: #333; margin-bottom: 15px; font-size: 1.15rem;">Research Interests</h5>
           
-          <!-- 웹사이트스러운 카드 & 태그 디자인으로 변경 -->
           <div class="d-flex flex-column">
-            <!-- 관심 분야 1 -->
             <div style="background-color: #f8f9fa; border-left: 4px solid #0056b3; border-radius: 6px; padding: 14px 20px; margin-bottom: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
               <div style="font-weight: 700; color: #212529; font-size: 1.1rem; margin-bottom: 8px;">
                 <i class="fas fa-star" style="color: #0056b3; margin-right: 8px;"></i>Recommender Systems
@@ -133,7 +124,6 @@ layout: default
               </div>
             </div>
 
-            <!-- 관심 분야 2 -->
             <div style="background-color: #f8f9fa; border-left: 4px solid #0056b3; border-radius: 6px; padding: 14px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
               <div style="font-weight: 700; color: #212529; font-size: 1.1rem;">
                 <i class="fas fa-project-diagram" style="color: #0056b3; margin-right: 8px;"></i>Graph Neural Networks
@@ -214,15 +204,18 @@ layout: default
 
       <!-- 섹션 4: Publications -->
       <div class="cv-section-wrapper">
-        <h2 id="publications" class="cv-section-title">Publications</h2>
+        <h2 id="publications" class="cv-section-title" style="margin-bottom: 10px;">Publications</h2>
         
-        <!-- 연도별 그룹핑 -->
+        <!-- 마크 범례(Legend) 추가 -->
+        <div style="font-size: 0.95rem; color: #555; margin-bottom: 25px; padding: 8px 12px; background-color: #f8f9fa; border-radius: 6px; display: inline-block; border: 1px solid #eaeaea;">
+          <span style="margin-right: 15px;"><strong><sup>+</sup></strong> co-first authorship</span>
+          <span><strong>*</strong> corresponding authorship of PI</span>
+        </div>
+        
         <h3 style="font-size: 1.4rem; font-weight: 700; color: #333; margin-bottom: 15px; padding-bottom: 5px; border-bottom: 1px solid #eaeaea;">2025</h3>
 
         <!-- 논문 1 [C1] -->
-        <!-- 좌측 파란색 선 복구 (border-left, padding-left) -->
         <div class="d-flex mb-4" style="border-left: 3px solid #0056b3; padding-left: 15px;">
-          <!-- [C1], [J1] 태그 영역 -->
           <div style="min-width: 50px; font-weight: 700; color: #0056b3; font-size: 1.15rem; margin-top: 1px;">[C1]</div>
           <div>
             <div style="font-size: 1.15rem; font-weight: 600; color: #212529; line-height: 1.4; margin-bottom: 4px;">
@@ -248,7 +241,6 @@ layout: default
               Park, J., <strong>Kang, M. <sup>+</sup></strong>, Sim, W., Lee, S. <sup>+</sup>, Park, H.
             </div>
             <div style="font-size: 1.05rem; color: #666;">
-              <!-- 닫히지 않은 em 태그 수정 완료 -->
               <em>ESWA</em> | <a href="https://arxiv.org/pdf/2509.11196" target="_blank" style="color: #0056b3; text-decoration: none; font-weight: 500;">[Link]</a>
             </div>
           </div>
@@ -265,7 +257,6 @@ layout: default
               Kwak, J.-K., Kim, J., Dutta, R., Kim, M., <strong>Kang, M.</strong>, Wee, A., Yu, Y., Shin, J., Park, H., Kim, D., Kim, S.
             </div>
             <div style="font-size: 1.05rem; color: #666;">
-              <!-- 닫히지 않은 em 태그 수정 완료 -->
               <em>Small</em> | <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/smll.202506026" target="_blank" style="color: #0056b3; text-decoration: none; font-weight: 500;">[Link]</a>
             </div>
           </div>
