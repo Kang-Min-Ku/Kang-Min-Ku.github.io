@@ -58,7 +58,7 @@ layout: default
     border-bottom: none !important; /* 마지막 항목 가로선 제거 */
   }
 
-  /* 사이드바 CV 다운로드 버튼 호버(Hover) 효과 */
+  /* 사이드바 CV 다운로드 버튼 호버(Hover) 효과 및 길이 조절 */
   .cv-sidebar-btn {
     transition: all 0.3s ease-in-out;
     display: inline-block;
@@ -67,9 +67,12 @@ layout: default
     color: #0056b3;
     background-color: transparent;
     border-radius: 30px;
-    padding: 8px 24px;
+    /* 2. 좌우 패딩을 줄여서 버튼 가로 길이를 아이콘 영역보다 좁게 만듭니다 */
+    padding: 6px 16px; 
     font-weight: 600;
-    font-size: 1.05rem;
+    font-size: 1.0rem;
+    width: 70%; /* 연락처 아이콘들보다 약간 좁은 비율 */
+    max-width: 140px; 
   }
   .cv-sidebar-btn:hover {
     background-color: #0056b3 !important;
@@ -92,17 +95,19 @@ layout: default
       <div class="sticky-top" style="top: 80px;"> 
         
         <!-- 사진과 이름 -->
-        <div class="text-center mb-4">
+        <!-- 1. 간격 축소를 위해 기존 mb-4를 지우고 간격을 직접 제어합니다 -->
+        <div class="text-center" style="margin-bottom: 12px;"> 
           <img src="{{ '/img/profile.jpeg' | relative_url }}" alt="Profile Picture" class="img-fluid home-avatar" style="width: 220px; height: 220px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
           
           <h3 class="mt-4 mb-0" style="font-weight: 700; color: #212529; font-size: 1.8rem; letter-spacing: -0.5px;">Minku Kang</h3>
-          <p style="font-size: 1.15rem; font-weight: 500; color: #555; margin-top: 5px;">Ph.D. Student in AI</p>
+          <p style="font-size: 1.15rem; font-weight: 500; color: #555; margin-top: 5px; margin-bottom: 0;">Ph.D. Student in AI</p>
         </div>
 
         <!-- 사이드바 CV 다운로드 버튼 배치 -->
-        <div class="text-center mb-3 pb-2">
+        <!-- 1. 간격 축소 적용 -->
+        <div class="text-center mb-3">
           <a href="https://drive.google.com/file/d/1TNbSeH_Ejc-2ArXALWCWRWHosHxRs9Jb/view?usp=sharing" target="_blank" class="cv-sidebar-btn">
-            <i class="fas fa-file-pdf" style="margin-right: 6px;"></i> Full CV
+            <i class="fas fa-file-pdf" style="margin-right: 4px;"></i> Full CV
           </a>
         </div>
 
