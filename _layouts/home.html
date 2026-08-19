@@ -8,6 +8,8 @@ layout: default
   
   .cv-container {
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    /* 4. 메인 영역을 넓게 쓰기 위해 전체 컨테이너의 최대 너비를 키웠습니다 */
+    max-width: 1250px !important; 
   }
   .cv-section-title {
     padding-top: 70px;
@@ -15,28 +17,31 @@ layout: default
     font-weight: 700;
     border-bottom: 2px solid #333;
     padding-bottom: 8px;
-    margin-bottom: 15px; /* 섹션 사이 간격을 위해 대폭 줄임 */
+    margin-bottom: 20px;
     color: #212529;
-    font-size: 1.6rem;
+    /* 폰트 크기 확대 */
+    font-size: 1.8rem; 
   }
-  .cv-item-org { /* 소속(학교/회사)을 강조하는 스타일로 변경 */
-    font-size: 1.15rem;
+  .cv-item-org {
+    /* 폰트 크기 확대 */
+    font-size: 1.25rem;
     font-weight: 700;
     color: #212529;
   }
-  .cv-item-title { /* 직함/학위를 서브 타이틀로 변경 */
-    font-size: 1.05rem;
+  .cv-item-title {
+    /* 폰트 크기 확대 */
+    font-size: 1.15rem;
     font-weight: 500;
     color: #0056b3;
     margin-bottom: 4px;
   }
   .cv-item-date {
-    font-size: 0.95rem;
+    /* 폰트 크기 확대 */
+    font-size: 1.05rem;
     color: #6c757d;
   }
-  /* 섹션 간의 여백을 절반으로 줄이기 위한 래퍼 클래스 */
   .cv-section-wrapper {
-    margin-bottom: 30px; 
+    margin-bottom: 35px; 
   }
 </style>
 
@@ -47,18 +52,18 @@ layout: default
   <div class="row">
     
     <!-- ============================================== -->
-    <!-- [좌측 영역] 프로필, 연락처, 점프 링크 (4칸 차지)  -->
+    <!-- [좌측 영역] 좌측 비율을 4에서 3(col-lg-3)으로 줄여 우측을 넓힘 -->
     <!-- ============================================== -->
-    <div class="col-md-4 mb-5">
+    <div class="col-lg-3 col-md-4 mb-5">
       <div class="sticky-top" style="top: 80px;"> 
         
         <!-- 사진과 이름 -->
         <div class="text-center mb-4">
-          <img src="{{ '/img/profile.jpeg' | relative_url }}" alt="Profile Picture" class="img-fluid home-avatar" style="width: 240px; height: 240px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+          <img src="{{ '/img/profile.jpeg' | relative_url }}" alt="Profile Picture" class="img-fluid home-avatar" style="width: 220px; height: 220px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
           
-          <!-- 이름과 직함 사이의 간격을 최소화 (mb-0 및 margin-top 조정) -->
           <h3 class="mt-4 mb-0" style="font-weight: 700; color: #212529; font-size: 1.8rem; letter-spacing: -0.5px;">Minku Kang</h3>
-          <p style="font-size: 1.15rem; font-weight: 500; color: #555; margin-top: 2px;">Ph.D. Student in AI</p>
+          <!-- 1. 간격을 3px 정도 미세하게 더 벌렸습니다 (margin-top: 5px) -->
+          <p style="font-size: 1.15rem; font-weight: 500; color: #555; margin-top: 5px;">Ph.D. Student in AI</p>
         </div>
 
         <!-- 연락처 아이콘 -->
@@ -88,34 +93,35 @@ layout: default
 
         <!-- 점프 링크 -->
         <div class="list-group list-group-flush text-center" style="border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-          <a href="#about" class="list-group-item list-group-item-action border-0 py-3" style="font-weight: 500; color: #444;">About Me</a>
-          <a href="#education" class="list-group-item list-group-item-action border-0 py-3" style="font-weight: 500; color: #444;">Education</a>
-          <a href="#experience" class="list-group-item list-group-item-action border-0 py-3" style="font-weight: 500; color: #444;">Experience</a>
-          <a href="#publications" class="list-group-item list-group-item-action border-0 py-3" style="font-weight: 500; color: #444;">Publications</a>
-          <a href="#awards" class="list-group-item list-group-item-action border-0 py-3" style="font-weight: 500; color: #444;">Awards</a>
+          <a href="#about" class="list-group-item list-group-item-action border-0 py-3" style="font-weight: 500; color: #444; font-size: 1.05rem;">About Me</a>
+          <a href="#education" class="list-group-item list-group-item-action border-0 py-3" style="font-weight: 500; color: #444; font-size: 1.05rem;">Education</a>
+          <a href="#experience" class="list-group-item list-group-item-action border-0 py-3" style="font-weight: 500; color: #444; font-size: 1.05rem;">Experience</a>
+          <a href="#publications" class="list-group-item list-group-item-action border-0 py-3" style="font-weight: 500; color: #444; font-size: 1.05rem;">Publications</a>
+          <a href="#awards" class="list-group-item list-group-item-action border-0 py-3" style="font-weight: 500; color: #444; font-size: 1.05rem;">Awards</a>
         </div>
         
       </div>
     </div>
 
     <!-- ============================================== -->
-    <!-- [우측 영역] 이력서 본문 (8칸 차지)                 -->
+    <!-- [우측 영역] 우측 비율을 8에서 9(col-lg-9)로 늘려 가로 크기 확장 -->
     <!-- ============================================== -->
-    <div class="col-md-8 pl-md-5">
+    <div class="col-lg-9 col-md-8 pl-lg-5 pl-md-4">
       
       <!-- 섹션 1: About Me -->
       <div class="cv-section-wrapper">
         <h2 id="about" class="cv-section-title">About Me</h2>
-        <p style="font-size: 1.05rem; line-height: 1.8; color: #444;">
+        <!-- 폰트 크기 확대 -->
+        <p style="font-size: 1.15rem; line-height: 1.8; color: #444;">
           <!-- 여기에 원하시는 자기소개를 자유롭게 작성해주세요 -->
         </p>
 
-        <div class="mt-3">
-          <h5 style="font-weight: 700; color: #333; margin-bottom: 12px; font-size: 1.05rem;">Research Interests</h5>
+        <div class="mt-4">
+          <h5 style="font-weight: 700; color: #333; margin-bottom: 12px; font-size: 1.15rem;">Research Interests</h5>
           <div>
-            <span style="display: inline-block; background-color: #f1f3f5; color: #495057; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; margin-right: 6px; margin-bottom: 6px; font-weight: 500;">Graph Neural Networks</span>
-            <span style="display: inline-block; background-color: #f1f3f5; color: #495057; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; margin-right: 6px; margin-bottom: 6px; font-weight: 500;">Generative Models</span>
-            <span style="display: inline-block; background-color: #f1f3f5; color: #495057; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; margin-right: 6px; margin-bottom: 6px; font-weight: 500;">Recommender Systems</span>
+            <span style="display: inline-block; background-color: #f1f3f5; color: #495057; padding: 6px 14px; border-radius: 20px; font-size: 1rem; margin-right: 6px; margin-bottom: 6px; font-weight: 500;">Graph Neural Networks</span>
+            <span style="display: inline-block; background-color: #f1f3f5; color: #495057; padding: 6px 14px; border-radius: 20px; font-size: 1rem; margin-right: 6px; margin-bottom: 6px; font-weight: 500;">Generative Models</span>
+            <span style="display: inline-block; background-color: #f1f3f5; color: #495057; padding: 6px 14px; border-radius: 20px; font-size: 1rem; margin-right: 6px; margin-bottom: 6px; font-weight: 500;">Recommender Systems</span>
           </div>
         </div>
       </div>
@@ -124,25 +130,25 @@ layout: default
       <div class="cv-section-wrapper">
         <h2 id="education" class="cv-section-title">Education</h2>
         
-        <div class="mb-3">
+        <div class="mb-4">
           <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
             <div class="cv-item-org">KAIST</div>
             <div class="cv-item-date">Aug 2026 – Present</div>
           </div>
           <div class="cv-item-title">Ph.D. in Artificial Intelligence</div>
-          <div style="color: #555; font-size: 0.95rem;">Advisor: Prof. Kijung Shin</div>
+          <div style="color: #555; font-size: 1.05rem;">Advisor: Prof. Kijung Shin</div>
         </div>
 
-        <div class="mb-3">
+        <div class="mb-4">
           <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
             <div class="cv-item-org">Sungkyunkwan University</div>
             <div class="cv-item-date">Aug 2023 – Aug 2025</div>
           </div>
           <div class="cv-item-title">Master of Engineering in Artificial Intelligence</div>
-          <div style="color: #555; font-size: 0.95rem;">Advisor: Prof. Hogun Park</div>
+          <div style="color: #555; font-size: 1.05rem;">Advisor: Prof. Hogun Park</div>
         </div>
 
-        <div class="mb-3">
+        <div class="mb-4">
           <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
             <div class="cv-item-org">Sungkyunkwan University</div>
             <div class="cv-item-date">Mar 2017 – Aug 2023</div>
@@ -155,7 +161,7 @@ layout: default
       <div class="cv-section-wrapper">
         <h2 id="experience" class="cv-section-title">Experience</h2>
         
-        <div class="mb-3">
+        <div class="mb-4">
           <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
             <div class="cv-item-org">Visang Education</div>
             <div class="cv-item-date">Nov 2025 – May 2026</div>
@@ -163,7 +169,7 @@ layout: default
           <div class="cv-item-title">AI Engineer</div>
         </div>
 
-        <div class="mb-3">
+        <div class="mb-4">
           <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
             <div class="cv-item-org">Samsung Electronics</div>
             <div class="cv-item-date">Mar 2022 – Jun 2022</div>
@@ -171,7 +177,7 @@ layout: default
           <div class="cv-item-title">Research Intern</div>
         </div>
 
-        <div class="mb-3">
+        <div class="mb-4">
           <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
             <div class="cv-item-org">LearnData Lab, Sungkyunkwan University</div>
             <div class="cv-item-date">Jun 2022 – Aug 2023</div>
@@ -179,7 +185,7 @@ layout: default
           <div class="cv-item-title">Undergraduate Research Assistant</div>
         </div>
 
-        <div class="mb-3">
+        <div class="mb-4">
           <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
             <div class="cv-item-org">SK Broadband</div>
             <div class="cv-item-date">Mar 2018 – Dec 2018</div>
@@ -192,42 +198,56 @@ layout: default
       <div class="cv-section-wrapper">
         <h2 id="publications" class="cv-section-title">Publications</h2>
         
-        <!-- 논문 1 (국제 학회) -->
-        <div class="mb-4">
-          <div style="font-size: 1.05rem; font-weight: 600; color: #212529; line-height: 1.4; margin-bottom: 4px;">
-            Curriculum Guided Personalized Subgraph Federated Learning
-          </div>
-          <div style="font-size: 0.95rem; color: #444; margin-bottom: 2px;">
-            <strong>Kang, M.</strong>, Park, H.*
-          </div>
-          <div style="font-size: 0.95rem; color: #666;">
-            <em>CIKM</em> 2025 | <a href="#" target="_blank" style="color: #0056b3; text-decoration: none; font-weight: 500;">[Link]</a>
+        <!-- 2. 연도별 그룹핑 추가 -->
+        <h3 style="font-size: 1.4rem; font-weight: 700; color: #333; margin-bottom: 15px; padding-bottom: 5px; border-bottom: 1px solid #eaeaea;">2025</h3>
+
+        <!-- 논문 1 [C1] -->
+        <!-- 3. 좌측 파란색 선 복구 (border-left, padding-left) -->
+        <div class="d-flex mb-4" style="border-left: 3px solid #0056b3; padding-left: 15px;">
+          <!-- 2. [C1], [J1] 태그 영역 -->
+          <div style="min-width: 50px; font-weight: 700; color: #0056b3; font-size: 1.15rem; margin-top: 1px;">[C1]</div>
+          <div>
+            <div style="font-size: 1.15rem; font-weight: 600; color: #212529; line-height: 1.4; margin-bottom: 4px;">
+              Curriculum Guided Personalized Subgraph Federated Learning
+            </div>
+            <div style="font-size: 1.05rem; color: #444; margin-bottom: 2px;">
+              <strong>Kang, M.</strong>, Park, H.*
+            </div>
+            <div style="font-size: 1.05rem; color: #666;">
+              <em>CIKM</em> 2025 | <a href="#" target="_blank" style="color: #0056b3; text-decoration: none; font-weight: 500;">[Link]</a>
+            </div>
           </div>
         </div>
 
-        <!-- 논문 2 (저널) -->
-        <div class="mb-4">
-          <div style="font-size: 1.05rem; font-weight: 600; color: #212529; line-height: 1.4; margin-bottom: 4px;">
-            Federated Recommender System with Data Valuation for E-commerce Platform
-          </div>
-          <div style="font-size: 0.95rem; color: #444; margin-bottom: 2px;">
-            Park, J., <strong>Kang, M. <sup>+</sup></strong>, Sim, W., Lee, S. <sup>+</sup>, Park, H.
-          </div>
-          <div style="font-size: 0.95rem; color: #666;">
-            <em>ESWA</em> 2025 | <a href="#" target="_blank" style="color: #0056b3; text-decoration: none; font-weight: 500;">[Link]</a>
+        <!-- 논문 2 [J2] -->
+        <div class="d-flex mb-4" style="border-left: 3px solid #0056b3; padding-left: 15px;">
+          <div style="min-width: 50px; font-weight: 700; color: #0056b3; font-size: 1.15rem; margin-top: 1px;">[J2]</div>
+          <div>
+            <div style="font-size: 1.15rem; font-weight: 600; color: #212529; line-height: 1.4; margin-bottom: 4px;">
+              Federated Recommender System with Data Valuation for E-commerce Platform
+            </div>
+            <div style="font-size: 1.05rem; color: #444; margin-bottom: 2px;">
+              Park, J., <strong>Kang, M. <sup>+</sup></strong>, Sim, W., Lee, S. <sup>+</sup>, Park, H.
+            </div>
+            <div style="font-size: 1.05rem; color: #666;">
+              <em>ESWA</em> 2025 | <a href="#" target="_blank" style="color: #0056b3; text-decoration: none; font-weight: 500;">[Link]</a>
+            </div>
           </div>
         </div>
 
-        <!-- 논문 3 (저널) -->
-        <div class="mb-4">
-          <div style="font-size: 1.05rem; font-weight: 600; color: #212529; line-height: 1.4; margin-bottom: 4px;">
-            AI-Integrated Optoelectronic Platform for Low-Latency Classification of Toxic Industrial Chemicals
-          </div>
-          <div style="font-size: 0.95rem; color: #444; margin-bottom: 2px;">
-            Kwak, J.-K., Kim, J., Dutta, R., Kim, M., <strong>Kang, M.</strong>, Wee, A., Yu, Y., Shin, J., Park, H., Kim, D., Kim, S.
-          </div>
-          <div style="font-size: 0.95rem; color: #666;">
-            <em>Small</em> 2025 | <a href="#" target="_blank" style="color: #0056b3; text-decoration: none; font-weight: 500;">[Link]</a>
+        <!-- 논문 3 [J1] -->
+        <div class="d-flex mb-4" style="border-left: 3px solid #0056b3; padding-left: 15px;">
+          <div style="min-width: 50px; font-weight: 700; color: #0056b3; font-size: 1.15rem; margin-top: 1px;">[J1]</div>
+          <div>
+            <div style="font-size: 1.15rem; font-weight: 600; color: #212529; line-height: 1.4; margin-bottom: 4px;">
+              AI-Integrated Optoelectronic Platform for Low-Latency Classification of Toxic Industrial Chemicals
+            </div>
+            <div style="font-size: 1.05rem; color: #444; margin-bottom: 2px;">
+              Kwak, J.-K., Kim, J., Dutta, R., Kim, M., <strong>Kang, M.</strong>, Wee, A., Yu, Y., Shin, J., Park, H., Kim, D., Kim, S.
+            </div>
+            <div style="font-size: 1.05rem; color: #666;">
+              <em>Small</em> 2025 | <a href="#" target="_blank" style="color: #0056b3; text-decoration: none; font-weight: 500;">[Link]</a>
+            </div>
           </div>
         </div>
       </div>
@@ -236,16 +256,16 @@ layout: default
       <div class="cv-section-wrapper">
         <h2 id="awards" class="cv-section-title">Awards</h2>
         
-        <div class="mb-2">
+        <div class="mb-3">
           <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
-            <div class="cv-item-org" style="font-size: 1.05rem;">Academic Excellence Scholarship</div>
+            <div class="cv-item-org" style="font-size: 1.15rem;">Academic Excellence Scholarship</div>
             <div class="cv-item-date">Mar 2022 – Mar 2023</div>
           </div>
         </div>
         
-        <div class="mb-2">
+        <div class="mb-3">
           <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
-            <div class="cv-item-org" style="font-size: 1.05rem;">Academic Excellence Scholarship</div>
+            <div class="cv-item-org" style="font-size: 1.15rem;">Academic Excellence Scholarship</div>
             <div class="cv-item-date">Sep 2018 – Mar 2020</div>
           </div>
         </div>
