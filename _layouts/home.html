@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<!-- Page Header -->
+<!-- 상단 여백 -->
 <div style="margin-top: 100px;"></div>
 
 <div class="container">
@@ -16,177 +16,220 @@ layout: default
         
         <!-- 사진과 이름 -->
         <div class="text-center mb-3">
-          <img src="{{ '/img/profile.jpeg' | relative_url }}" alt="Profile Picture" class="img-fluid home-avatar">
-          <!-- CV에 있는 영문 이름과 현재 소속을 표기했습니다 -->
-          <h3 class="mt-3">Minku Kang[cite: 2]</h3>
-          <p class="text-muted mb-2">Ph.D. Student in Artificial Intelligence[cite: 2]</p>
+          <img src="{{ '/img/profile.jpeg' | relative_url }}" alt="Profile Picture" class="img-fluid home-avatar" style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+          <h3 class="mt-4" style="font-weight: 800; letter-spacing: -0.5px;">Minku Kang</h3>
+          <p class="text-muted mb-2" style="font-size: 1.05rem;">Ph.D. Student in AI</p>
         </div>
 
         <!-- 연락처 아이콘 -->
         <div class="text-center mb-4">
           <ul class="list-inline">
             <li class="list-inline-item">
-              <!-- CV에 기재된 이메일을 적용했습니다 -->
               <a href="mailto:netisen4@gmail.com">
-                <span class="fa-stack fa-sm"><i class="fas fa-circle fa-stack-2x"></i><i class="far fa-envelope fa-stack-1x fa-inverse"></i></span>
+                <span class="fa-stack fa-sm"><i class="fas fa-circle fa-stack-2x" style="color: #495057;"></i><i class="far fa-envelope fa-stack-1x fa-inverse"></i></span>
               </a>
             </li>
             {% if site.linkedin_username %}
             <li class="list-inline-item">
               <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-                <span class="fa-stack fa-sm"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-linkedin fa-stack-1x fa-inverse"></i></span>
+                <span class="fa-stack fa-sm"><i class="fas fa-circle fa-stack-2x" style="color: #0077b5;"></i><i class="fab fa-linkedin fa-stack-1x fa-inverse"></i></span>
               </a>
             </li>
             {% endif %}
             {% if site.github_username %}
             <li class="list-inline-item">
               <a href="https://github.com/{{ site.github_username }}">
-                <span class="fa-stack fa-sm"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-github fa-stack-1x fa-inverse"></i></span>
+                <span class="fa-stack fa-sm"><i class="fas fa-circle fa-stack-2x" style="color: #333;"></i><i class="fab fa-github fa-stack-1x fa-inverse"></i></span>
               </a>
             </li>
             {% endif %}
           </ul>
         </div>
 
-        <!-- 점프 링크 (CV 항목에 맞춰 확장) -->
-        <div class="list-group list-group-flush text-center home-jump-links" style="border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-          <a href="#about" class="list-group-item list-group-item-action border-0 home-jump-link">About Me</a>
-          <a href="#education" class="list-group-item list-group-item-action border-0 home-jump-link">Education</a>
-          <a href="#experience" class="list-group-item list-group-item-action border-0 home-jump-link">Experience</a>
-          <a href="#publications" class="list-group-item list-group-item-action border-0 home-jump-link">Publications</a>
-          <a href="#awards" class="list-group-item list-group-item-action border-0 home-jump-link">Awards</a>
+        <!-- 점프 링크 -->
+        <div class="list-group list-group-flush text-center" style="border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+          <a href="#about" class="list-group-item list-group-item-action border-0 py-3" style="font-weight: 600; color: #555;">About Me</a>
+          <a href="#education" class="list-group-item list-group-item-action border-0 py-3" style="font-weight: 600; color: #555;">Education</a>
+          <a href="#experience" class="list-group-item list-group-item-action border-0 py-3" style="font-weight: 600; color: #555;">Experience</a>
+          <a href="#publications" class="list-group-item list-group-item-action border-0 py-3" style="font-weight: 600; color: #555;">Publications</a>
+          <a href="#awards" class="list-group-item list-group-item-action border-0 py-3" style="font-weight: 600; color: #555;">Awards</a>
         </div>
         
       </div>
     </div>
 
     <!-- ============================================== -->
-    <!-- [우측 영역] 자유로운 자기소개 본문 (8칸 차지)      -->
+    <!-- [우측 영역] 이력서 본문 (8칸 차지)                 -->
     <!-- ============================================== -->
-    <div class="col-md-8">
+    <div class="col-md-8 pl-md-5">
       
       <!-- 섹션 1: About Me -->
-      <h2 id="about" class="home-section-heading" style="padding-top: 70px; margin-top: -70px; font-weight: 800; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; margin-bottom: 20px;">About Me</h2>
+      <h2 id="about" style="padding-top: 70px; margin-top: -70px; font-weight: 800; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 25px; letter-spacing: -1px;">About Me</h2>
       
-      <p style="font-size: 1.1rem; line-height: 1.8;">
+      <p style="font-size: 1.1rem; line-height: 1.8; color: #444;">
         <!-- 여기에 원하시는 자기소개를 자유롭게 작성해주세요 -->
       </p>
 
-      <h5 style="margin-top: 20px;">Research Interests</h5>
-      <p style="font-size: 1.1rem;">
-        Graph Neural Networks, Generative Models, Recommender Systems[cite: 2].
-      </p>
+      <div class="mt-4">
+        <h5 style="font-weight: 700; color: #333; margin-bottom: 15px;">Research Interests</h5>
+        <div>
+          <span style="display: inline-block; background-color: #f1f3f5; color: #495057; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; margin-right: 8px; margin-bottom: 8px; font-weight: 500;">Graph Neural Networks</span>
+          <span style="display: inline-block; background-color: #f1f3f5; color: #495057; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; margin-right: 8px; margin-bottom: 8px; font-weight: 500;">Generative Models</span>
+          <span style="display: inline-block; background-color: #f1f3f5; color: #495057; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; margin-right: 8px; margin-bottom: 8px; font-weight: 500;">Recommender Systems</span>
+        </div>
+      </div>
 
       <br><br>
 
       <!-- 섹션 2: Education -->
-      <h2 id="education" class="home-section-heading" style="padding-top: 70px; margin-top: -70px; font-weight: 800; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; margin-bottom: 20px;">Education</h2>
+      <h2 id="education" style="padding-top: 70px; margin-top: -70px; font-weight: 800; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 25px; letter-spacing: -1px;">Education</h2>
       
-      <div class="mb-4">
-        <h4 style="margin-top: 0; font-size: 1.3rem;">KAIST</h4>
-        <p style="margin-bottom: 5px;"><strong>Ph.D. in Artificial Intelligence (Kim Jaechul Graduate School of AI)</strong> | <em>Daejeon, Republic of Korea</em>[cite: 2]</p>
-        <p class="text-muted" style="margin-bottom: 10px; font-size: 0.95rem;">August 2026 – Present[cite: 2]</p>
-        <ul style="font-size: 1.05rem;">
-          <li>Advisor: Kijung Shin[cite: 2]</li>
+      <!-- 학위 1 -->
+      <div class="mb-5">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-2">
+          <h4 style="margin: 0; font-weight: 700; color: #212529;">KAIST</h4>
+          <span class="text-muted" style="font-size: 0.95rem;">Aug 2026 – Present | <em>Daejeon, Korea</em></span>
+        </div>
+        <div style="font-size: 1.1rem; font-weight: 600; color: #0056b3; margin-bottom: 8px;">Ph.D. in Artificial Intelligence</div>
+        <p style="font-size: 1rem; color: #555; margin-bottom: 4px;">Kim Jaechul Graduate School of AI</p>
+        <ul style="color: #666; padding-left: 20px; font-size: 0.95rem;">
+          <li>Advisor: Prof. Kijung Shin</li>
         </ul>
       </div>
 
-      <div class="mb-4">
-        <h4 style="margin-top: 0; font-size: 1.3rem;">Sungkyunkwan University</h4>
-        <p style="margin-bottom: 5px;"><strong>Master of Engineering in Artificial Intelligence</strong> | <em>Suwon, Republic of Korea</em>[cite: 2]</p>
-        <p class="text-muted" style="margin-bottom: 10px; font-size: 0.95rem;">August 2023 – August 2025[cite: 2]</p>
-        <ul style="font-size: 1.05rem;">
-          <li>Cumulative GPA: 4.44/4.50[cite: 2]</li>
-          <li>Thesis: Curriculum Guided Personalized Subgraph Federated Learning[cite: 2]</li>
-          <li>Advisor: Hogun Park[cite: 2]</li>
+      <!-- 학위 2 -->
+      <div class="mb-5">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-2">
+          <h4 style="margin: 0; font-weight: 700; color: #212529;">Sungkyunkwan University</h4>
+          <span class="text-muted" style="font-size: 0.95rem;">Aug 2023 – Aug 2025 | <em>Suwon, Korea</em></span>
+        </div>
+        <div style="font-size: 1.1rem; font-weight: 600; color: #0056b3; margin-bottom: 8px;">Master of Engineering in Artificial Intelligence</div>
+        <ul style="color: #666; padding-left: 20px; font-size: 0.95rem; line-height: 1.7;">
+          <li><strong>Cumulative GPA:</strong> 4.44 / 4.50</li>
+          <li><strong>Thesis:</strong> Curriculum Guided Personalized Subgraph Federated Learning</li>
+          <li><strong>Advisor:</strong> Prof. Hogun Park</li>
         </ul>
       </div>
 
-      <div class="mb-4">
-        <h4 style="margin-top: 0; font-size: 1.3rem;">Sungkyunkwan University</h4>
-        <p style="margin-bottom: 5px;"><strong>Bachelor of Engineering in Computer Science and Engineering</strong> | <em>Suwon, Republic of Korea</em>[cite: 2]</p>
-        <p class="text-muted" style="margin-bottom: 10px; font-size: 0.95rem;">March 2017 – August 2023[cite: 2]</p>
-        <ul style="font-size: 1.05rem;">
-          <li>Cumulative GPA: 3.80/4.50[cite: 2]</li>
-          <li>Major GPA: 4.06/4.50[cite: 2]</li>
+      <!-- 학위 3 -->
+      <div class="mb-5">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-2">
+          <h4 style="margin: 0; font-weight: 700; color: #212529;">Sungkyunkwan University</h4>
+          <span class="text-muted" style="font-size: 0.95rem;">Mar 2017 – Aug 2023 | <em>Suwon, Korea</em></span>
+        </div>
+        <div style="font-size: 1.1rem; font-weight: 600; color: #0056b3; margin-bottom: 8px;">Bachelor of Engineering in Computer Science and Engineering</div>
+        <ul style="color: #666; padding-left: 20px; font-size: 0.95rem; line-height: 1.7;">
+          <li><strong>Cumulative GPA:</strong> 3.80 / 4.50 (Major GPA: 4.06 / 4.50)</li>
         </ul>
       </div>
 
-      <br><br>
+      <br>
 
       <!-- 섹션 3: Experience -->
-      <h2 id="experience" class="home-section-heading" style="padding-top: 70px; margin-top: -70px; font-weight: 800; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; margin-bottom: 20px;">Experience</h2>
+      <h2 id="experience" style="padding-top: 70px; margin-top: -70px; font-weight: 800; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 25px; letter-spacing: -1px;">Experience</h2>
       
-      <div class="mb-4">
-        <h4 style="margin-top: 0; font-size: 1.2rem;">AI Engineer | Visang Education</h4>
-        <p class="text-muted" style="margin-bottom: 5px; font-size: 0.95rem;">Seoul, Republic of Korea | November 2025 – May 2026[cite: 2]</p>
-        <ul style="font-size: 1.05rem;">
-          <li>Optimized textbook data pipelines by integrating LLMs for automated content extraction and structuring[cite: 2].</li>
+      <!-- 경력 1 -->
+      <div class="mb-5">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-2">
+          <h4 style="margin: 0; font-weight: 700; color: #212529;">AI Engineer</h4>
+          <span class="text-muted" style="font-size: 0.95rem;">Nov 2025 – May 2026 | <em>Seoul, Korea</em></span>
+        </div>
+        <div style="font-size: 1.05rem; font-weight: 600; color: #495057; margin-bottom: 8px;">Visang Education</div>
+        <ul style="color: #666; padding-left: 20px; font-size: 0.95rem; line-height: 1.7;">
+          <li>Optimized textbook data pipelines by integrating LLMs for automated content extraction and structuring.</li>
         </ul>
       </div>
 
-      <div class="mb-4">
-        <h4 style="margin-top: 0; font-size: 1.2rem;">Research Intern | Samsung Electronics</h4>
-        <p class="text-muted" style="margin-bottom: 5px; font-size: 0.95rem;">Hwaseong, Republic of Korea | March 2022 – June 2022[cite: 2]</p>
-        <ul style="font-size: 1.05rem;">
-          <li>Developed a Transformer-based early failure detection model for DRAM modules[cite: 2].</li>
-          <li>Engineered large-scale DRAM test data for model training[cite: 2].</li>
+      <!-- 경력 2 -->
+      <div class="mb-5">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-2">
+          <h4 style="margin: 0; font-weight: 700; color: #212529;">Research Intern</h4>
+          <span class="text-muted" style="font-size: 0.95rem;">Mar 2022 – Jun 2022 | <em>Hwaseong, Korea</em></span>
+        </div>
+        <div style="font-size: 1.05rem; font-weight: 600; color: #495057; margin-bottom: 8px;">Samsung Electronics</div>
+        <ul style="color: #666; padding-left: 20px; font-size: 0.95rem; line-height: 1.7;">
+          <li>Developed a Transformer-based early failure detection model for DRAM modules.</li>
+          <li>Engineered large-scale DRAM test data for model training.</li>
         </ul>
       </div>
 
-      <div class="mb-4">
-        <h4 style="margin-top: 0; font-size: 1.2rem;">Undergraduate Research Assistant | LearnData Lab, Sungkyunkwan University</h4>
-        <p class="text-muted" style="margin-bottom: 5px; font-size: 0.95rem;">Suwon, Republic of Korea | June 2022 – August 2023[cite: 2]</p>
-        <ul style="font-size: 1.05rem;">
-          <li>Designed and executed experimental frameworks for federated recommender systems (Published in ESWA, 2026)[cite: 2].</li>
-          <li>Conducted research on federated learning for graph data[cite: 2].</li>
+      <!-- 경력 3 -->
+      <div class="mb-5">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-2">
+          <h4 style="margin: 0; font-weight: 700; color: #212529;">Undergraduate Research Assistant</h4>
+          <span class="text-muted" style="font-size: 0.95rem;">Jun 2022 – Aug 2023 | <em>Suwon, Korea</em></span>
+        </div>
+        <div style="font-size: 1.05rem; font-weight: 600; color: #495057; margin-bottom: 8px;">LearnData Lab, Sungkyunkwan University</div>
+        <ul style="color: #666; padding-left: 20px; font-size: 0.95rem; line-height: 1.7;">
+          <li>Designed and executed experimental frameworks for federated recommender systems (Published in ESWA, 2026).</li>
+          <li>Conducted research on federated learning for graph data.</li>
         </ul>
       </div>
 
-      <div class="mb-4">
-        <h4 style="margin-top: 0; font-size: 1.2rem;">Research Intern | SK Broadband</h4>
-        <p class="text-muted" style="margin-bottom: 5px; font-size: 0.95rem;">Gwacheon, Republic of Korea | March 2018 – December 2018[cite: 2]</p>
-        <ul style="font-size: 1.05rem;">
-          <li>Contributed to development of a machine learning model to identify TV viewers[cite: 2].</li>
-          <li>Engineered TV viewing data for model training[cite: 2].</li>
+      <!-- 경력 4 -->
+      <div class="mb-5">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-2">
+          <h4 style="margin: 0; font-weight: 700; color: #212529;">Research Intern</h4>
+          <span class="text-muted" style="font-size: 0.95rem;">Mar 2018 – Dec 2018 | <em>Gwacheon, Korea</em></span>
+        </div>
+        <div style="font-size: 1.05rem; font-weight: 600; color: #495057; margin-bottom: 8px;">SK Broadband</div>
+        <ul style="color: #666; padding-left: 20px; font-size: 0.95rem; line-height: 1.7;">
+          <li>Contributed to the development of a machine learning model to identify TV viewers.</li>
+          <li>Engineered TV viewing data for model training.</li>
         </ul>
       </div>
 
-      <br><br>
+      <br>
 
       <!-- 섹션 4: Publications -->
-      <h2 id="publications" class="home-section-heading" style="padding-top: 70px; margin-top: -70px; font-weight: 800; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; margin-bottom: 20px;">Publications</h2>
+      <h2 id="publications" style="padding-top: 70px; margin-top: -70px; font-weight: 800; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 25px; letter-spacing: -1px;">Publications</h2>
       
       <div class="mb-4">
-        <h4 style="margin-top: 0; font-size: 1.15rem; color: #555;">Conference Publications</h4>
-        <ul style="font-size: 1.05rem; list-style-type: square;">
-          <li style="margin-bottom: 10px;">
-            Kang, M., Park, H.* (2025). <strong>Curriculum Guided Personalized Subgraph Federated Learning.</strong> <em>International Conference on Information and Knowledge Management</em>[cite: 2].
-          </li>
-        </ul>
+        <h4 style="font-weight: 700; font-size: 1.15rem; color: #333; margin-bottom: 15px;">Conference Publications</h4>
+        <div style="background-color: #f8f9fa; padding: 15px 20px; border-left: 4px solid #0056b3; border-radius: 4px; margin-bottom: 15px;">
+          <p style="margin: 0; font-size: 1rem; color: #444; line-height: 1.6;">
+            <strong>Kang, M.</strong>, Park, H.* (2025). <br>
+            <strong style="color: #212529;">"Curriculum Guided Personalized Subgraph Federated Learning."</strong> <br>
+            <em>International Conference on Information and Knowledge Management.</em>
+          </p>
+        </div>
       </div>
 
-      <div class="mb-4">
-        <h4 style="margin-top: 0; font-size: 1.15rem; color: #555;">Journal Publications</h4>
-        <ul style="font-size: 1.05rem; list-style-type: square;">
-          <li style="margin-bottom: 10px;">
-            Park, J., Kang, M. +, Sim, W., Lee, S. +, Park, H. (2025). <strong>Federated Recommender System with Data Valuation for E-commerce Platform.</strong> <em>Expert Systems with Applications</em>. (Impact Factor: 7.5, JCR Journal Rank: Top 6.1%)[cite: 2].
-          </li>
-          <li style="margin-bottom: 10px;">
-            Kwak, J.-K., Kim, J., Dutta, R., Kim, M., Kang, M., Wee, A., Yu, Y., Shin, J., Park, H., Kim, D., Kim, S. (2025). <strong>AI-Integrated Optoelectronic Platform for Low-Latency Classification of Toxic Industrial Chemicals.</strong> <em>Small</em>. (Accepted; Impact Factor: 12.1, JCR Journal Rank: Top 7.2%)[cite: 2].
-          </li>
-        </ul>
+      <div class="mb-5">
+        <h4 style="font-weight: 700; font-size: 1.15rem; color: #333; margin-bottom: 15px;">Journal Publications</h4>
+        
+        <div style="background-color: #f8f9fa; padding: 15px 20px; border-left: 4px solid #0056b3; border-radius: 4px; margin-bottom: 15px;">
+          <p style="margin: 0; font-size: 1rem; color: #444; line-height: 1.6;">
+            Park, J., <strong>Kang, M. <sup>+</sup></strong>, Sim, W., Lee, S. <sup>+</sup>, Park, H. (2025). <br>
+            <strong style="color: #212529;">"Federated Recommender System with Data Valuation for E-commerce Platform."</strong> <br>
+            <em>Expert Systems with Applications.</em> (Impact Factor: 7.5, JCR Journal Rank: Top 6.1%)
+          </p>
+        </div>
+
+        <div style="background-color: #f8f9fa; padding: 15px 20px; border-left: 4px solid #0056b3; border-radius: 4px;">
+          <p style="margin: 0; font-size: 1rem; color: #444; line-height: 1.6;">
+            Kwak, J.-K., Kim, J., Dutta, R., Kim, M., <strong>Kang, M.</strong>, Wee, A., Yu, Y., Shin, J., Park, H., Kim, D., Kim, S. (2025). <br>
+            <strong style="color: #212529;">"AI-Integrated Optoelectronic Platform for Low-Latency Classification of Toxic Industrial Chemicals."</strong> <br>
+            <em>Small.</em> (Accepted; Impact Factor: 12.1, JCR Journal Rank: Top 7.2%)
+          </p>
+        </div>
       </div>
 
-      <br><br>
+      <br>
 
       <!-- 섹션 5: Awards -->
-      <h2 id="awards" class="home-section-heading" style="padding-top: 70px; margin-top: -70px; font-weight: 800; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; margin-bottom: 20px;">Awards</h2>
+      <h2 id="awards" style="padding-top: 70px; margin-top: -70px; font-weight: 800; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 25px; letter-spacing: -1px;">Awards</h2>
       
-      <ul style="font-size: 1.05rem;">
-        <li style="margin-bottom: 8px;"><strong>Academic Excellence Scholarship</strong> | <em>Suwon, Republic of Korea</em>[cite: 2] (March 2022 – March 2023)[cite: 2].</li>
-        <li style="margin-bottom: 8px;"><strong>Academic Excellence Scholarship</strong> | <em>Suwon, Republic of Korea</em>[cite: 2] (September 2018 – March 2020)[cite: 2].</li>
-      </ul>
+      <div class="mb-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center pb-2 mb-2" style="border-bottom: 1px dashed #ddd;">
+          <div style="font-size: 1.05rem; font-weight: 600; color: #212529;">Academic Excellence Scholarship</div>
+          <div class="text-muted" style="font-size: 0.95rem;">Mar 2022 – Mar 2023 | <em>Suwon, Korea</em></div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center pb-2 mb-2" style="border-bottom: 1px dashed #ddd;">
+          <div style="font-size: 1.05rem; font-weight: 600; color: #212529;">Academic Excellence Scholarship</div>
+          <div class="text-muted" style="font-size: 0.95rem;">Sep 2018 – Mar 2020 | <em>Suwon, Korea</em></div>
+        </div>
+      </div>
       
     </div>
   </div>
