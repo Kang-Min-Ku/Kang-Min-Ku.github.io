@@ -57,6 +57,18 @@ layout: default
   .cv-jumpbar .list-group-item:last-child {
     border-bottom: none !important; /* 마지막 항목 가로선 제거 */
   }
+
+  /* CV 다운로드 버튼 호버(Hover) 효과 */
+  .cv-download-btn {
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    text-decoration: none !important;
+  }
+  .cv-download-btn:hover {
+    background-color: #e9ecef !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08) !important;
+    transform: translateY(-2px);
+  }
 </style>
 
 <!-- 상단 여백 -->
@@ -127,6 +139,17 @@ layout: default
         <p style="font-size: 1.15rem; line-height: 1.8; color: #444;">
           I am a Ph.D. student at KAIST AI advised by Prof. Kijung Shin.
         </p>
+
+        <!-- CV 링크 버튼 영역 (Research Interests와 유사한 디자인) -->
+        <div class="mt-4 mb-4">
+          <a href="#" target="_blank" class="cv-download-btn" style="background-color: #f8f9fa; border-left: 4px solid #0056b3; border-radius: 6px; padding: 12px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.03); color: #212529;">
+            <div style="font-weight: 700; font-size: 1.1rem; display: flex; align-items: center;">
+              <i class="fas fa-file-alt" style="color: #0056b3; margin-right: 10px; font-size: 1.2rem;"></i>
+              Curriculum Vitae (CV) 
+              <i class="fas fa-external-link-alt" style="margin-left: 8px; font-size: 0.9rem; color: #6c757d;"></i>
+            </div>
+          </a>
+        </div>
 
         <div class="mt-4">
           <h5 style="font-weight: 700; color: #333; margin-bottom: 15px; font-size: 1.15rem;">Research Interests</h5>
